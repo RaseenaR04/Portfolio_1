@@ -1,0 +1,467 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+body {
+  background: linear-gradient(to right, rgb(0, 0, 14), rgb(12, 12, 159));
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, rgb(0, 0, 14), rgb(12, 12, 159));
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 30px;
+  font-weight: 700;
+  color: azure;
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.resume-button,
+.mobile-resume {
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 30px;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover,
+.resume-button:focus,
+.mobile-resume:hover {
+  background-color: aliceblue;
+  color: rgb(0, 0, 14);
+  text-decoration: none;
+}
+
+/* Buttons (used as links) */
+.btn-primary {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 20px;
+  background: linear-gradient(to right, rgb(0, 0, 14), rgb(12, 12, 159));
+  color: white;
+  border: 2px solid aliceblue;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: aliceblue;
+  color: rgb(0, 0, 14);
+  text-decoration: none;
+}
+
+/* Sections */
+.bg-section,
+.bg-section1,
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+}
+
+/* Home Section */
+.bg-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.typewriter {
+  color: #01288a;
+  -webkit-text-stroke: 1.2px white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 1000;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 25px;
+  width: 0;
+  animation: typing 2.5s steps(100, end) forwards;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 26ch;
+  }
+}
+
+/* About Section */
+.bg-section1 {
+  background: linear-gradient(to right, rgb(0, 0, 14), rgb(12, 12, 159));
+  min-height: 80vh;
+  color: rgb(243, 244, 248);
+}
+
+.head {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: aliceblue;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin: 0 auto 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* About box */
+.about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 0 15px;
+}
+
+.about-box img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: aliceblue;
+}
+
+/* Skills Section */
+.skills {
+  background: linear-gradient(to right, rgb(0, 0, 14), rgb(12, 12, 159));
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+}
+
+.box1 {
+  background-color: aliceblue;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  color: black;
+  text-align: center;
+}
+
+.box1:hover {
+  transform: scale(1.05);
+}
+
+.box1 img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.box1 h3 {
+  font-weight: 600;
+  color: #01288a;
+  text-align: center;
+}
+
+/* Contact Section */
+/* New Contact Section */
+.new-contact {
+  background: linear-gradient(to right, rgb(0, 0, 14), rgb(12, 12, 159));
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.connect-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.highlight {
+  color: rgb(242, 242, 242);
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: purple;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  background-color: rgb(8, 30, 225);
+  color: white;
+}
+/* Updated Social Icons with Colored Icons */
+.social-icons .icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific icon colors */
+.icon.github i {
+  color: #171515; /* GitHub dark */
+}
+
+.icon.linkedin i {
+  color: #0e76a8; /* LinkedIn blue */
+}
+
+.icon.email i {
+  color: #c71610; /* Red for email */
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  background-color: aliceblue;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .social-icons {
+    gap: 20px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .about-box {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .about-text {
+    max-width: 600px;
+  }
+}
+
+/* Responsive for hamburger and mobile nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background: rgba(0, 0, 14, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .desktop-resume {
+    display: none;
+  }
+
+  .mobile-resume {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .typewriter {
+    font-size: 1.1rem;
+  }
+}
+
+section {
+  padding: 60px 20px;
+  margin-bottom: 60px;
+}
+.projects-section {
+  background: linear-gradient(to right, rgb(0, 0, 14), rgb(12, 12, 159));
+  color: aliceblue;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: aliceblue;
+  color: rgb(0, 0, 14);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card h3 {
+  color: #01288a;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: navy; /* 👈 Add this line */
+}
+
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-project {
+  padding: 10px 20px;
+  border: 2px solid #01288a;
+  border-radius: 25px;
+  background-color: #01288a;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-project:hover {
+  background-color: white;
+  color: #01288a;
+}
+.project-img-square {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto 15px auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

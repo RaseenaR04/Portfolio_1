@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raseena R</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">Raseena R</a></div>
+
+      <!-- Hamburger icon -->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <!-- Nav links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-button">Home</a></li>
+        <li><a href="#about" class="nav-button">About</a></li>
+        <li><a href="#skills" class="nav-button">Skills</a></li>
+        <li><a href="#projects" class="nav-button">Projects</a></li>
+        <li><a href="#contact" class="nav-button">Contact</a></li>
+        <li><a class="resume-button mobile-resume" href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+
+      <!-- Desktop resume button -->
+    </div>
+  </nav>
+
+  <section id="home" class="bg-section">
+    <h1>Hi There! 👋🏻</h1>
+    <h1>I'M RASEENA R</h1>
+    <div class="typewriter">CyberSecurity Enthusiast 🤖👩🏻‍💻</div>
+    <a href="#about" class="btn-primary">About</a>
+  </section>
+
+  <section id="about" class="bg-section1">
+    <h2 class="head">About Me 👩🏻‍💻</h2>
+    <div class="about-box">
+      <img src="dp.jpg" alt="profile" />
+      <p class="about-text">
+        Enthusiastic B. Tech IT student with a strong interest in cybersecurity, programming and databases management.
+        Eager to apply academic knowledge in real-world environments and contribute to impactful tech projects.
+      </p>
+      <a href="#skills" class="btn-primary about-next">Skills</a>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2 class="head">Skills</h2>
+    <div class="grid">
+      <div class="box1"><img src="c.png" alt="C" /><h3>C</h3></div>
+      <div class="box1"><img src="java.png" alt="Java" /><h3>Java</h3></div>
+      <div class="box1"><img src="python.png" alt="Python" /><h3>Python</h3></div>
+      <div class="box1"><img src="html & css.png" alt="HTML & CSS" /><h3>HTML & CSS</h3></div>
+      <div class="box1"><img src="sql.png" alt="SQL" /><h3>SQL</h3></div>
+    </div>
+    <a href="#projects" class="btn-primary skills-next">Projects</a>
+  </section>
+
+  <section id="projects" class="projects-section">
+  <h2 class="head">Projects 🛠️</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="pass.jpg" alt="Password Strength Checker" class="project-img-square" />
+      <h3>Password Strength Checker</h3>
+      <p>
+        A real-time web tool that helps users create strong and secure passwords. It checks strength dynamically based on character combinations.
+      </p>
+      <div class="project-buttons">
+        <a href="https://github.com/RaseenaR04/password_strength_checker" target="_blank" class="btn-project">GitHub</a>
+        <a href="https://raseenar04.github.io/password_strength_checker/" target="_blank" class="btn-project">Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="contact-section new-contact">
+  <h2 class="head">FIND ME ON</h2>
+  <p class="connect-text">Feel free to <span class="highlight">connect</span> with me</p>
+  
+  <div class="social-icons">
+    <a href="https://github.com/RaseenaR04" target="_blank" class="icon github" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:raseena.r10102005@gmail.com" class="icon email" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/raseena-r-4a594731a/" target="_blank" class="icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</section>
+
+  <!-- Script for hamburger toggle -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu on link click (optional)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
